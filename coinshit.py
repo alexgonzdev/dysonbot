@@ -85,11 +85,12 @@ class getTHATBREADDDDDDDD :#line:27
                 O000OOOOO000O000O ={'dwfrm_billing_paymentMethods_selectedPaymentMethodID':'CREDIT_CARD','dwfrm_billing_paymentMethods_creditCard_type':"{}".format (OO000O0O0OOO0OO00 ),'dwfrm_billing_paymentMethods_creditCard_owner':"{} {}".format (OO000O00O0O0OOO0O ,O0OOO0O0OOOOOOO00 ),'dwfrm_billing_paymentMethods_creditCard_number':"{}{}".format (O00O00000O000O000 ,O000000OO000OOO00 ),'dwfrm_billing_paymentMethods_creditCard_month':"{}".format (OOO0O00O0OOOO0O00 ),'dwfrm_billing_paymentMethods_creditCard_year':"{}".format (OO0O0O0O00OOO00OO ),'dwfrm_billing_paymentMethods_creditCard_cvn':'{}'.format (O0OOOO0O000O0OO0O ),'dwfrm_billing_securekey':OOOO000O0O0O0O000 ,'dwfrm_emailsignup_phone':''}#line:176
                 O0O00OO0O0OO0OO00 =O0OO0OOOOO0OO000O .post ('https://catalog.usmint.gov/on/demandware.store/Sites-USM-Site/default/COSummary-Submit',headers =OO0OO00O0O0OOOOOO ,data =O000OOOOO000O000O )#line:178
                 OOOO0OOOOO000OO0O =O0O00OO0O0OO0OO00 .text #line:179
-                if "If you have questions about your order":#line:180
+                if "If you have questions about your order" in OOOO0OOOOO000OO0O:#line:180
                     OO00O0O0000O000OO ()#line:181
                 elif "unable to process"in OOOO0OOOOO000OO0O :#line:182
                     print ("Payment Declined, Retyring")#line:183
                 elif "properly"in OOOO0OOOOO000OO0O :#line:184
+
                     print ("request error")#line:185
                 elif "Something went wrong"in OOOO0OOOOO000OO0O :#line:186
                     print ("site crashed")#line:187
